@@ -1,0 +1,290 @@
+/*
+Copyright (C), 2023-2024, Sara Echeverria (bl33h)
+     @author Sara Echeverria
+     FileName: bender.css
+     @version: I
+     Creation: 09/02/2023
+     Last modification: 18/02/2023
+*/
+
+/* --- Head measuraments --- */
+html,
+body 
+{
+  height: 100%;
+  font-size: 1.2vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Container --- */
+.outer-container:
+{
+  opacity: 1;
+}
+
+/* --- Container after --- */
+.outer-container:after 
+{
+  height: 100%;
+  width: 100%;
+  content: "";
+  opacity: 1;
+  left: 0;
+  top: 0;
+}
+
+/* --- Bender/robot from Futurama --- */
+#bender 
+{
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* --- Details from the top of the head --- */
+#antenna 
+{
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: #e3f7fe;
+  border: 0.5rem solid #000000;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+}
+
+/* --- Bender's antenna before  --- */
+#antenna:before 
+{
+  height: 25rem;
+  width: 1rem;
+  background-color: #a9c5da;
+  border: 0.54rem solid #000000;
+  border-radius: 50%;
+  content: "";
+  flex: 0 0 auto;
+  position: relative;
+  top: 15.5rem;
+}
+
+/* --- Bender's antenna after  --- */
+#antenna:after 
+{
+  height: 4rem;
+  width: 6rem;
+  background-color: #e3f7fe;
+  border: 0.5rem solid #000000;
+  border-radius: 6rem;
+  content: "";
+  flex: 0 0 auto;
+  position: relative;
+  top: -1rem;
+}
+
+/* --- Bender's visor/eyes  --- */
+#visor 
+{
+  height: 10rem;
+  width: 22rem;
+  background-color: #e3f7fe;
+  border: 0.5rem solid #000000;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  flex-flow: row no-wrap;
+  justify-content: center;
+  position: relative;
+  left: 15%;
+  top: 350px;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+/* --- Bender's antenna after  --- */
+#visor:after 
+{
+  background-color: #000000;
+  border: 0.5rem solid #000000;
+  border-radius: 3rem;
+  content: "";
+  flex: 0 0 auto;
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  top: 1rem;
+}
+
+/* --- Space between Bender's eyes and structure --- */
+.eyecontainer 
+{
+  height: 7.3rem;
+  width: 8.6rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.eyecontainer:first-child 
+{
+  margin-right: 1rem;
+}
+
+/* --- Bender's eyebrows structure --- */
+.eyebrow-shape 
+{
+  height: 100%;
+  width: 8.6rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  position: absolute;
+  top: 1rem;
+}
+
+.eyebrow 
+{
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+#left-eyebrow 
+{
+  border-left: 0rem solid transparent;
+  border-right: 4rem solid #000000;
+  border-bottom: 3rem solid transparent;
+  border-top: 0rem solid transparent;
+  right: 0%;
+}
+
+#right-eyebrow 
+{
+  border-left: 4rem solid #000000;
+  border-right: 0rem solid transparent;
+  border-bottom: 3rem solid transparent;
+  border-top: 0rem solid transparent;
+  left: 0%;
+}
+
+/* --- Bender's pupil structure --- */
+.eyeball 
+{
+  height: 8rem;
+  width: 8.6rem;
+  background-color: #fffcd3;
+  border-radius: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+#pupil-left 
+{
+  height: 2rem;
+  width: 2rem;
+  background-color: #000000;
+  position: absolute;
+  left: 5.2rem;
+  top: 3.85rem;
+  z-index: 1;
+}
+
+#pupil-right 
+{
+  height: 2rem;
+  width: 2rem;
+  background-color: #000000;
+  position: absolute;
+  right: 5.2rem;
+  top: 3.85rem;
+  z-index: 1;
+}
+
+/* --- Bender's mouth structure --- */
+#mouth 
+{
+  height: 7rem;
+  width: 14rem;
+  border: 0.5rem solid #000000;
+  border-radius: 5rem;
+  overflow: hidden;
+  position: relative;
+  top: 21.5rem;
+  z-index: 2;
+}
+
+/* --- Bender's teeth structure --- */
+#mouth-lines 
+{
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.teeth 
+{
+  height: 7rem;
+  width: 2rem;
+  background-color: #fffcd3;
+  border-right: 0.4rem solid #000000;
+}
+
+.teeth:last-child
+{
+  border-right: 0;
+}
+
+#mouth-horizontal 
+{
+  height: 2rem;
+  width: 14rem;
+  border-bottom: 0.4rem solid #000000;
+  border-top: 0.4rem solid #000000;
+  transform: translateY(4.7rem);
+  margin-top:-52px;
+}
+
+/* --- Bender's parts background & details --- */
+#top-details 
+{
+ height: 16rem;
+  width: 16rem;
+  background-color: #a9c5da;
+  border: 0.5rem solid #000000;
+  border-radius: 100%;
+  margin-top: -9.3rem;
+  z-index: -1;
+}
+
+#mid-details 
+{
+  height: 21.5rem;
+  width: 16rem;
+  background-color: #a9c5da;
+  border-left: 0.5rem solid #000000;
+  border-right: 0.5rem solid #000000;
+  margin-top: -8.3rem;
+  z-index: 1
+}
+
+#bot-details 
+{
+  height: 4rem;
+  width: 16rem;
+  background-color: #a9c5da;
+  border: 0.5rem solid #000000;
+  border-radius: 100%;
+  margin-top: -2.3rem;
+  z-index: -1;
+}
