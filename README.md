@@ -1,5 +1,5 @@
 # benderCSSonly
-This project showcases a CSS-only drawing of a Futurama character Blender. Using only CSS, the drawing brings to life the iconic character blender from the beloved animated series Futurama.
+This project showcases a CSS-only drawing of a Futurama character Bender. Using only CSS, the drawing brings to life the iconic character blender from the beloved animated series Futurama.
 
 <p align="center">
   <br>
